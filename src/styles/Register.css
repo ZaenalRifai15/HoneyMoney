@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 200px;
+    position: relative;
+}
+
+.login-card {
+    background-color: #eaf2f9;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    z-index: 1;
+}
+
+input, button {
+    width: 100%;
+    max-width: 350px;
+    align-self: center;
+}
+
+.login-logo {
+    width: 50px;
+    align-self: center;
+    margin-bottom: 10px;
+    color: #045692;
+}
+
+h2 {
+    text-align: center;
+    color: #004c84;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-input {
+    font-family: 'Montserrat', sans-serif;
+    background: #eaf2f9;
+    padding: 12px;
+    border: 2px solid #004c84;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.login-button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px;
+    background-color: #004c84;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.divider {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 350px;
+    align-self: center;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #777777;
+}
+
+.divider span {
+    margin: 0 10px;
+    color: #777777;
+}
+
+.google-login-button {
+    font-family: 'Montserrat', sans-serif;
+    color: #777777;
+    padding: 10px;
+    border: 2px solid #004c84;
+    border-radius: 10px;
+    background: #eaf2f9;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.google-logo {
+    margin-right: 83px;
+}
+
+.google-login-button img {
+    width: 18px;
+    height: 18px;
+}
+
+.signup-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 13px;
+}
+
+.signup-text a {
+    color: #004c84;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-illustration {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    z-index: 0;
+}
+
+.login-illustration img {
+    height: 100%; /* biar memenuhi vertikal dan bisa 'nempel' */
+    width: auto;
+    object-fit: contain;
+}
